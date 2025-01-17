@@ -1,0 +1,42 @@
+ <div class="section">
+        <section id="ambilan">
+         <nav>
+             <a href="#" onclick="showNote('note1')">Menu 1</a>
+             <a href="#" onclick="showNote('note2')">Menu 2</a>
+             <a href="#" onclick="showNote('note3')">Menu 3</a>
+         </nav>
+         <main>
+             <div id="note1" class="note">       
+                 <strong> ambilan partonggoan:</strong> Ambilan partonggoan
+                 2 Musa 4:10-17
+                 “ Tuhan Yang Memilih,Tuhan Juga Yang Melengkapi ”
+                     Mari kita berdoa  (berdoa)* ,
+                 Prolog;                                                                                                                                                                        Saudara yang terkasih di dalam Tuhan kita Kristus Yesus,malam ini kita akan merenungkan firman Tuhan yang ter ambil dari kitab Keluaran 4:10-17 dengan tema “ Tuhan yang memilih,Tuhan juga yang melengkapi” dan topik kita “Sirsir mambaritahon hata ni Tuhan” 
+                 Dan kami akan membacakan firman Tuhan untuk kita semua dan saudara saudara sekalian mengikutinya didalam hati,beginilah firman Tuhan  ( 2 musa 4:10-17 )
+                    Dalam bagian ini kita akan melihat bagaimana Tuhan dan bekerja didalam orang-orang yang dianggap lemah ataupun tidak layak untuk orang yang dalam melaksanakan tugas dan pangilan-Nya di dalam gereja di tengah tengah jemaat,masyarakat,negara dan dunia, bukan berdasarkan penilaian atau standar manusia.   (dst)*
+                    Jika kita mengacu dalam kitab 1 samuel 16:7, Tuhan berkata kepada Samuel ,”Jangan pandang wajahnya atau tinggi badannya sebab Aku telah menolak dia,karena yang dilihat manusia ialah apa yang didepan mata,tetapi yang dilihat Tuhan ialah hati.”
+                   Musa mengelak atau marsidalian ( 2 musa 4:10 ) dengan alasan aku tidak pandai bicara,banyak mungkin kita seperti musa,dengan alasan sibuk,banyak kerjaan,kurang pandai berkata kata, (dst)*
+                 
+             </div>
+             <div id="note2" class="note">
+                    <strong> catatan menu 2:</strong> ini adalah catatan untuk menu2.
+                </div>
+             <div id="note3" class="note">
+                     <strong> catatan menu 3:</strong> ini adalah catatan untuk menu3.
+                </div>
+         </main>
+         </section>
+         <script>
+             function showNote(noteId) {
+                 const notes = document.querySelectorAll ('.note');
+                 notes.forEach (note => {
+                     note.style.display = 'none';
+                 });
+
+                 const noteToShow = document.getElementById(noteId);
+                     if (noteToShow) {
+                         noteToShow.style.display = 'block';
+                     }
+             }
+         </script>
+         

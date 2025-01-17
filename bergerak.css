@@ -1,0 +1,193 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    overflow: hidden;
+    overflow-y: scroll;
+    height: 100vh;
+    background-image: url('background.jpg');
+    background-size: 450px;
+    background-position: center;
+    background-position-y: 20px
+}
+
+.header {
+    position: absolute;
+    height: 150px;
+    width: 100%;
+    background-color: yellow;
+    display: flex;
+    align-items: center;
+    padding: 55px;
+    box-sizing: border-box;
+}
+
+.header img {
+    height: 120px;
+    width: auto;
+    padding: 1px;
+}
+
+.slideshow-container {
+    position: relative;
+    overflow: hidden;
+    left: 0;
+    right: 0;
+    height: 100px;
+
+}
+
+.slideshow-container img {
+    height: auto;
+    position: absolute;
+    left: 430px;
+    width: 45%;
+    transition: opacity 1s ease-in-out; 
+    opacity: 0;
+    top: 40px;
+}
+
+.slideshow-container img.active {
+    opacity: 1;
+}
+
+.menu {
+    padding: 10px 20px;
+    background-color:cadetblue;
+    margin: 5px;
+    border-radius: 10px;
+    max-width: 100%px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    display: flex;
+    position: relative;
+    top: 50px;
+    z-index: 1;
+
+}
+
+.menu a {
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+    transition: background-color 0.3s, color 0.3s;
+    margin: 10px;
+    justify-content: center;
+    color: yellow;
+    border: 1px solid grey;
+    border-radius: 10px;
+    background-color: blueviolet;
+    padding: 3px 5px;
+}
+
+.menu a:hover {
+    color: white;
+    transition-duration: 0.3s;
+    transform: scale(1.0);
+}  
+
+.logokecil {
+    height: 30px;
+    padding: 4px;
+}
+.search-container {
+    position: absolute;
+    top: 125px;
+    right: 20px;
+    z-index: 10;
+}
+
+.search-container input {
+    padding: 5px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+}
+
+.search-container button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    background-color:blue;
+    color: white;
+    cursor: pointer;
+}
+
+.search-container button:hover {
+    background-color:red;
+}
+
+@media (max-width: 600px) {
+    .menu {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .menu a {
+        padding: 1px;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+
+.ambilan {
+    border-radius: 5px 5px 5px 5px;
+    background-color: red;
+    height: 20px;
+    padding: 3px 5px;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+.note {
+    background-color: aqua;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    margin-top: 20px;
+    border-radius: 10px;
+    position: relative;
+    top: 40px;
+    display: none;
+    padding: 20px;
+    background-size: 1300px;
+    background-position: bottom;
+    color: red;
+}
+textarea {
+    width: 100%;
+    height: 200px;
+    padding:10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    resize: none;
+}
+
+.news-item {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.news-titel {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.news-date {
+    color: #888;
+    font-size: 14px;
+}
+
+.news-content {
+    font-size: 25px;
+    margin-top: 10px;
+    color: black;
+}
+
+.news-image {
+    max-width: 22%;
+    height: auto;
+    border-radius: 5px;
+}

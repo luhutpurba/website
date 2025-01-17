@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bergerak.css" />
+    <title>gkps sinar baru</title>
+</head>  
+<body>
+    <div class="header">
+        <img src="logo1.png" alt="logo kiri" class="logo left">
+        <img src="logo persekutuan.png" alt="logo kanan" class="logo right">
+        <img src="agusteis.png" alt="logo mid" class="logo mid">
+        <div class="search-container">
+            <input type="text" placeholder=" cari...">
+            <button>cari</button>
+        </div>
+    </div>
+
+    <div class="slideshow-container">
+        <img src="GKPS SINAR BARU.png" alt="gambar1" class="active">
+        <img src="gkps1.png" alt="gambar2">
+        <img src="gkps2.png" alt="gambar3">
+    </div>
+
+    <script>
+        const images = document.querySelectorAll('.slideshow-container img');
+        const totalImages = images.length
+        let current = 0;
+
+        function changeImage() {
+            images[current].classList.remove('active');
+            current = (current + 1) % images.length; // Loop kembali ke gambar pertama
+            images[current].classList.add('active');
+        }
+
+        setInterval(changeImage, 3000); // Ganti gambar setiap 3 detik
+</script>
+
+     <div class="menu">  
+        <img src="GKPS SINAR BARU.png" alt="gambar kecil" class="logokecil" >
+        <a href="#home" onclick="showNote('home')">beranda </a>
+        <a href="#about" onclick="showNote('about')">sejarah</a>
+        <a href="#leadership" onclick="showNote('leadership')">kepengurusan</a>
+        <a href="#schedule" onclick="showNote('schedule')">jadwal ibadah</a>
+        <a href="#profil" onclick="showNote('profil')">profil</a>
+        <a href="#statistik" onclick="showNote('statistik')">statistik</a>
+        <a href="#ambilan" onclick="showNote('ambilan')">ambilan</a>
+        <a href="Ambilan partonggoan.docx" class="ambilan">download ambilan partonggoan</a>
+     </div>
+
+     <script>
+            function showNote(noteId) {
+                const notes = document.querySelectorAll ('.note');
+                notes.forEach (note => {
+                    note.style.display = 'none';
+                });
+
+                const selectedNote = document.getElementById(noteId);
+                    if (selectedNote) {
+                        selectedNote.style.display = 'block';
+                    }
+            }
+    </script>
+        
+     <div class="section">
+            <section id="home" class="note" class="news-item">
+                    <h4>Beranda</h4>
+                    <p>Kami WARGA JEMAAT GKPS SINAR BARU mengundang Anda untuk bergabung dengan kami dalam ibadah dan komunitas yang penuh kasih.</p>
+                    <p>DAMAI KRISTUS YESUS BESERTA KITA SEMUA.</p>
+                    <div class="news-titel"> Pesta Olob-Olob GKPS</div>
+                    <div class="news-date"> Minggu 8 Sebtember 2024 </div>
+                    <img src="olob2.jpg" alt="gambar berita" class="news-image">
+                    <img src="olob3.png" alt="gambar berita" class="news-image">
+                    <img src="porseni.jpg" alt="gambar berita" class="news-image">
+                    <img src="pangulu1.jpg" alt="gambar berita" class="news-image">
+                    <div class="news-content">
+                        Ini adalah berita kabar GKPS Sinar Baru saat pesta olob olob Resort Sinar Baru yang diadakan di GKPS Bandar Mariah,
+                        moment ini saat serah terima pada penutupan pesta olob-olob pardasni ambilan namadear I Tanoh Simalungun 121 Tahun
+                    </div>
+            </section>
+
+            <section id="about" class="note">
+                    <h4>Tentang GKPS SINAR BARU</h4>
+                    <h5>Sejarah</h5>
+                    <p>Pada mulanya jemaat Sinar Baru mengadakan kebaktian minggu di gereja GKPS desa purba sinombah dengan jarak tempuh lebih kurang 2 km</p>
+                    <p>   Karena jauhnya jarak tempuh untuk beribadah ke gereja GKPS yang berada di desa  Purba Sinombah maka tumbuhlah suatu keinginan dikemudian hari untuk mendirikan gereja baru.Dahulunya jemaat bertempat tinggal di Desa Bagotlingga
+                        yang sekarang dikenang dengan nama Huta Lama,yang hari kemudian masyarakat Bagotlingga berpindah huta ketempat yang baru dan menamakannya Desa Sinar Baru yang berartikan
+                        "Kampung yang Baru dan Bersinar"
+                        setelah ada musyawarah yang mencapai mufakat bersama dirikanlah sebuah bangunan gereja  GKPS Sinar Baru dengan swadaya jemaat itu sendiri di desa Sinar Baru pada tahun
+                        tgl 23 maret 1983 dengan resort Saribudolok distrik 3
+                    </p>
+                    <h5>Tema</h5>
+                    <p>TEMA sinode GKPS tahun 2024 "Hasadaon pakon pangidangion namarbuah"</p>
+                    <h5>Sub tema</h5>
+                    <p>"Pataridahkon hita ma hasirsironta pasaudkon hadoharon pakon hadameion i tongah tongahni masyarakat ampa negara maronjolan bani hapintoran ampa hasintongan". 
+                            Kami percaya bahwa setiap orang berhak merasakan kasih Tuhan</p>
+            </section>
+
+            <section id="schedule" class="note">
+                <h4>Jadwal Ibadah</h4>
+                <h5>Ibadah Minggu Umum</h5>
+                <p><strong>Pukul:</strong> 10.00 WIB</p>
+
+                <h5>Ibadah Sekolah Minggu </h5>
+                <p><strong>Pukul:</strong> 08.00 WIB</p>
+                
+                <h5>Partonggoan Malam sektor</h5>
+                <p><strong>Pukul:</strong> 20.00 WIB</p>
+                <p><strong>Hari:</strong> Kamis</p>
+
+                <h5>Partonggoan Malam Namaposo </h5>
+                <p><strong>Pukul:</strong> 21.00 WIB</p>
+                <p><strong>Hari:</strong> jumat</p>
+
+                <h5> Partonggoan Wanita </h5>
+                <p><strong>Pukul:</strong> 15.00 WIB</p>
+                <p><strong>Hari:</strong> Minggu</p>
+
+                <h5> Partonggoan Sekolah Minggu </h5>
+                <p><strong>Pukul:</strong> 19.00 WIB</p>
+                <p><strong>Hari:</strong> Sabtu</p>
+            </section>
+                
+              
+    <section id="leadership" class="note">
+        <h4>Kepengurusan</h4>
+        <h5>Pengurus Gereja GKPS SINAR BARU</h5>
+        <ul>
+            <li><strong>Pendeta:</strong> Pdt.KIKI ELISA PURBA.STH</li>
+            <li><strong>P.jemaat:</strong> St.WARDIAHMAN PURBA</li>
+            <li><strong>W.P.Jemaat:</strong> St.JALERMAN SUMBAYAK</li>
+            <li><strong>Bendahara:</strong> St.MARDIANUS PURBA</li>
+            <li><strong>Sekretaris:</strong> St.ABEL MUNTHE</li>
+        </ul>
+    
+        <h5>Pengurus seksi Namaposo</h5>
+        <ul>
+            <li><strong>Ketua:</strong>RIANDI GIRSANG</li>
+            <li><strong>Anggota:</strong></li>
+        </ul>
+    
+        <h5>Pengurus seksi Bapa</h5>
+        <ul>
+            <li><strong>Ketua:</strong>Sy RUDIANTO PURBA</li>
+            <li><strong>Anggota:</strong></li>
+        </ul>
+    
+        <h5>Pengurus seksi Inang</h5>
+        <ul>
+            <li><strong>Ketua:</strong> </li>
+            <li><strong>Anggota:</strong> </li>
+        </ul>
+    
+        <h5>Pengurus seksi Sekolah Minggu</h5>
+        <ul>
+            <li><strong>Ketua:</strong> </li>
+            <li><strong>Anggota:</strong> </li>
+        </ul>
+    
+        <h5>Pengurus seksi Remaja</h5>
+        <ul>
+            <li><strong>Ketua:</strong> JESKIA SITANGGANG</li>
+            <li><strong>Anggota:</strong> </li>
+        </ul>
+    
+        <h5>Pengurus Sektor</h5>
+        <ul>
+            
+            <li><strong>KETUA SEKTOR I :</strong> </li>
+            <li><strong>KETUA SEKTOR II :</strong> </li>
+            <li><strong>KETUA SEKTOR III :</strong> </li>
+            <li><strong>KETUA SEKTOR IV :</strong> </li>
+        </ul>
+    </section>
+
+            <section id="ambilan" class="note">
+                <nav>
+                    <a href="#" onclick="showWritingArea()"> Tempat menulis</a>
+                </nav>
+                <main id="writingArea" style="display: none;">
+                    <h1>tempat menulis</h1>
+                    <p>silahkan tulis sesuatu dibawah ini:</p>
+                    <textarea placeholder="Tulis catatan anda disini...."></textarea>
+                </main>
+        
+            <script>
+                function showWritingArea() {
+                    const writingArea = document.getElementById('writingArea');
+                    writingArea.style.display = writingArea.style.display === 'none' ? 'block' : 'none';
+                 }
+            </script>
+            </section>
+         </div>
+
+ </body>
+</html>

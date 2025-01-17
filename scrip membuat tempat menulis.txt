@@ -1,0 +1,22 @@
+ <div class="section">
+            <section id="home">
+                    <h4>Beranda</h4>
+                    <p>Kami WARGA JEMAAT GKPS SINAR BARU mengundang Anda untuk bergabung dengan kami dalam ibadah dan komunitas yang penuh kasih.</p>
+                    <p>DAMAI KRISTUS YESUS BESERTA KITA SEMUA.</p>
+                </section>
+            <section id="ambilan">
+                <nav>
+                    <a href="#" onclick="showWritingArea()"> Tempat menulis</a>
+                </nav>
+                <main id="writingArea" style="display: none;">
+                    <h1>tempat menulis</h1>
+                    <p>silahkan tulis sesuatu dibawah ini:</p>
+                    <textarea placeholder="Tulis catatan anda disini...."></textarea>
+                </main>
+        
+            <script>
+                function showWritingArea() {
+                    const writingArea = document.getElementById('writingArea');
+                    writingArea.style.display = writingArea.style.display === 'none' ? 'block' : 'none';
+                 }
+            </script>
